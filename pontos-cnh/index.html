@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Cálculo de pontos na CNH</title>
+</head>
+<body>
+
+  <h2>Formulário que calcula os pontos na CNH</h2>
+  <p>Insira a velocidade no campo. <br />
+  A velocidade permitida é 70 Km/h, com uma tolerância de 4km/h a mais. <br>
+  A cada 5 Km/h acima do permitido será computado um ponto na CNH do condutor.<br/>
+  Se o condutor atingir 12 pontos ele terá a CNH caçada.</p>
+  <div class="container">
+
+    <form method="GET">
+      <label for="veloc">Digite a velocidade do veículo: </label>
+      <input id="veloc" type="text" name="veloc"><br><br>
+      <input id="form" type="submit" value="Enviar">
+      <input id="limpar" type="submit" value="Limpar Formulário">
+    </form>
+  
+    <h2>Veja o resultado:</h2>
+    <div class="result">
+      <p id="result"></p>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
